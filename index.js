@@ -50,7 +50,7 @@ app.get('/', async (req, res) => {
 
         // CPU 부하 계산 실행
         console.time("primeCalculation");
-        const primes = calculatePrimes(50000); // 예: 5만까지의 소수를 계산 (부하 설정)
+        const primes = calculatePrimes(200000); // 예: 5만까지의 소수를 계산 (부하 설정)
         console.timeEnd("primeCalculation");
 
         // 이미지를 포함한 HTML 응답
